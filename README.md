@@ -17,7 +17,7 @@ Step 6: Perform exact inference using the defined evidence and query variables.<
 Step 7: Print the results.<br>
 
 ## Program :
-
+```
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
@@ -35,12 +35,13 @@ evidence={'JohnCalls':1,'MarryCalls':0}
 query_variable='Burglary'
 result=inference.query(variables=[query_variable],evidence=evidence)
 print(result)
-
+```
 
 ## Output :
 ![image](https://github.com/Booshanram/Ex-No.-3--Implementation-of-Exact-Inference-Method-of-Bayesian-Network/assets/113018636/32c96a89-dc56-4c04-95da-78ebe852f283)
 
 
 ## Result :  
+the inference Burglary P(B| j,⥗m) in alarm problem by using Variable Elimination method in Python implemented successfully.
 
 
